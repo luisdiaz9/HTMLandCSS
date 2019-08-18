@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Visualization Dashboard</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link rel="stylesheet" href = "styles.css">
+  <style>
+        body {background-color:rgb(225,225,225)}
+  </style>
+
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+		
+                  <div style="background:white", class="navbar navbar-default">
+                    <button type="button" class="btn btn-success">
+			<a class="navbar-brand" href="index.html"><font color="white">Lattitude</font></a>
+		    </button>
+                 
+                    <ul class="nav navbar-nav navbar-right">
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="maxtemp.html">Max Temperature</a></li>
+                          <li><a href="humidity.html">Humidity</a></li>
+                          <li><a href="cloudiness.html">Cloudiness</a></li>
+                          <li><a href="windspeed.html">Wind Speed</a></li>
+			<hr>
+                        </ul>
+                      </li>
+                      <li><a href="comparison.html">Comparison</a></li>
+                      <li><a href="data.html">Data</a></li>
+                    </ul>
+		 </div>
+
+                </div>
+		</div>
+        </nav>
+        <br>
+        <br>
+        <br>
+
+
+
+
+    <div class="container">
+ 
+      <div class="row">
+        <div class="col-lg-8 col-sm-12">
+	<div style="background:white", class="box box-left">
+          <h1><font color="green">Humidity</font></h1>
+          <hr>
+          <img src="City Latitude vs. Humidity 06-19-2019.png" alt="humidity" height="400" width="600" align="center">
+          <p>The scatter graph illustrates the number of cities with a wide range of humidities in percentage per degree of Latitude on June 19th 2019. The highest number of cities had over 60 percent of humidity while few of them laid under that threshold. It could be appreciated an increase in the number of cities in the range from zero to almost 80 degrees of latitude. However, that amount was not as significant as the one in the range from -60 to 0 degrees of latitude.  Overall, the number of cities with high humidity increased from -40 to over 60 degrees of latitude. 
+          </p>
+        </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+	<div style="background:white", class="box box-right">
+            <h2><font color="green">Visualizations</font></h2>
+            <hr>
+                <div class= "col-md-6 col-sm-3">
+		<a href="maxtemp.html">
+                    <img id ="City Latitude vs. Max Temperature 06-19-2019.png" src="City Latitude vs. Max Temperature 06-19-2019.png" alt="maxtemp" height="150" width="150" > 
+		</a>
+                </div> 
+                <div class= "col-md-6 col-sm-3">
+		<a href="humidity.html">
+                    <img class = "boxx" id = "City Latitude vs. Humidity 06-19-2019.png" src="City Latitude vs. Humidity 06-19-2019.png" alt="humidity" height="150" width="150">
+		</a>
+                </div> 
+                <div class= "col-md-6 col-sm-3">
+		<a href="cloudiness.html">
+                    <img id = "City Latitude vs. Cloudiness (%) 06-19-2019.png" src="City Latitude vs. Cloudiness (%) 06-19-2019.png" alt="cloudiness" height="150" width="150"  >
+		</a>
+                </div> 
+                <div class= "col-md-6 col-sm-3">
+		<a href="windspeed.html">
+                    <img id = "City Latitude vs. Wind Speed (mph) 06-19-2019.png" src="City Latitude vs. Wind Speed (mph) 06-19-2019.png" alt="windspeed" height="150" width="150" >
+		</a>
+               </div> 
+        </div>
+        </div>
+     </div>
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</html>   
+  

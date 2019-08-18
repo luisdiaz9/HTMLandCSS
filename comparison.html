@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Visualization Dashboard</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link rel="stylesheet" href = "styles.css">
+  <style>
+        body {background-color:rgb(225,225,225)}
+  </style>
+
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+		
+                  <div style="background:white", class="navbar navbar-default">
+                    <button type="button" class="btn btn-success">
+			<a class="navbar-brand" href="index.html"><font color="white">Lattitude</font></a>
+		    </button>
+                 
+                    <ul class="nav navbar-nav navbar-right">
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="maxtemp.html">Max Temperature</a></li>
+                          <li><a href="humidity.html">Humidity</a></li>
+                          <li><a href="cloudiness.html">Cloudiness</a></li>
+                          <li><a href="windspeed.html">Wind Speed</a></li>
+			<hr>
+                        </ul>
+                      </li>
+                      <li><a href="comparison.html">Comparison</a></li>
+                      <li><a href="data.html">Data</a></li>
+                    </ul>
+		 </div>
+
+                </div>
+
+        </nav>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+	<div  style="background:white", class="banner">
+                <br>
+                <h1><font color="green">Comparison: Latitude vs X</font></h1> 
+                <hr>
+                <p>Click any plot to get an in depth analysis.</p>
+                  <div class="col-md-6 col-sm-12">
+                    <div class="image-box">
+                      <h3><font color="green">vs. Max Temperature<font/></h3>
+                      <a href="maxtemp.html">
+                      <img id ="City Latitude vs. Max Temperature 06-19-2019.png" src="City Latitude vs. Max Temperature 06-19-2019.png" alt="latvstemp" height="400" width="500">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-12">
+                    <div class="image-box">
+                      <h3><font color="green">vs. Humidity<font/></h3>
+                      <a href="humidity.html">
+                        <img id ="City Latitude vs. Humidity 06-19-2019.png" src="City Latitude vs. Humidity 06-19-2019.png"" alt="humidity" height="400" width="500">
+                      </a>
+                    </div>
+                  </div>
+                <br/>
+                  <div class="col-md-6 col-sm-12">
+                    <div class="image-box">
+                      <h3><font color="green">vs. Cloudiness<font/></h3>
+                      <a href="cloudiness.html">
+                    <img id = "City Latitude vs. Cloudiness (%) 06-19-2019.png" src="City Latitude vs. Cloudiness (%) 06-19-2019.png" alt="cloudiness" height="400" width="500">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-12">
+                    <div class="image-box">
+                      <h3><font color="green">vs. Wind Speed<font/></h3>
+                      <a href="windspeed.html">
+                    <img id = "City Latitude vs. Wind Speed (mph) 06-19-2019.png" src="City Latitude vs. Wind Speed (mph) 06-19-2019.png" alt="windspeed" height="400" width="500">
+                      </a>
+                    </div>
+                  </div>
+	</div>
+	</div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</html>
